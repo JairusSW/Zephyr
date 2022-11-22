@@ -1,0 +1,26 @@
+{
+  "name": "zephyr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:src": "tsc",
+    "build:grammar": "nearleyc src/grammar.ne -o src/grammar.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JairusSW/Zephyr.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JairusSW/Zephyr/issues"
+  },
+  "homepage": "https://github.com/JairusSW/Zephyr#readme",
+  "dependencies": {
+    "@types/nearley": "^2.11.2",
+    "nearley": "^2.20.1"
+  }
+}

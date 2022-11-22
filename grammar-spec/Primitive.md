@@ -18,7 +18,7 @@
 - v128
 
 - usize
-- isize
+- isize 
 
 - bool
 
