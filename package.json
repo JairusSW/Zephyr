@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "zep": "lib/index.js"
+  },
   "scripts": {
     "build:src": "tsc",
     "build:grammar": "nearleyc src/grammar.ne -o src/grammar.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node lib/index.js src/index.zep"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,8 @@
   "homepage": "https://github.com/JairusSW/Zephyr#readme",
   "dependencies": {
     "@types/nearley": "^2.11.2",
+    "@types/node": "^18.11.9",
+    "long": "^5.2.1",
     "nearley": "^2.20.1"
   }
 }

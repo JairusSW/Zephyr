@@ -14,8 +14,11 @@ export abstract class LiteralExpression extends Expression {
     }
 }
 
-export class NumberLiteralExpression extends LiteralExpression {
-    constructor(public value: number, start: number | undefined) {
+export class FloatLiteralExpression extends LiteralExpression {
+    constructor(
+        public value: number,
+        start: number | undefined
+    ) {
         super(start);
     }
 }
